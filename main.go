@@ -11,7 +11,7 @@ import (
 func main() {
     mw := multiWeatherProvider{
         openWeatherMap{},
-        weatherUnderground{apiKey: "your-key-here"},
+        weatherUnderground{apiKey: "123"},
     }
 
     http.HandleFunc("/weather/", func(w http.ResponseWriter, r *http.Request) {
